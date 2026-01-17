@@ -21,7 +21,9 @@
     "architecture": "Interactive Architectural Model",
     "architecture_desc": "Transforming architectural models into interactive experiences using Three.js, allowing users to deeply explore structure and functionality.",
     "investment": "Investment Notes",
-    "investment_desc": "Records of my investment learning notes, analyzing and applying tools like stocks, bonds, futures, and options."
+    "investment_desc": "Records of my investment learning notes, analyzing and applying tools like stocks, bonds, futures, and options.",
+    "Physim": "PhysimHub",
+    "Physim_desc": "PhysimHub is a platform that combines physics simulation and education, aiming to allow learners to explore the mysteries of the physical world more intuitively through interactive experiments and visualization tools."
   },
   "footer": {
     "rights": "All rights reserved."

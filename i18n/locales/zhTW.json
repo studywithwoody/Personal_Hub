@@ -21,7 +21,9 @@
     "architecture": "互動式建築模型",
     "architecture_desc": "透過Three.js將建築模型轉換為互動式模型，讓使用者可以更深入的了解建築的結構和功能。",
     "investment": "投資筆記",
-    "investment_desc": "記錄我的投資學習筆記，包括股票、債券、期貨、選擇權等投資工具的分析和應用。"
+    "investment_desc": "記錄我的投資學習筆記，包括股票、債券、期貨、選擇權等投資工具的分析和應用。",
+    "Physim": "PhysimHub",
+    "Physim_desc": "PhysimHub 是一個結合物理模擬與教育的平台，旨在透過互動式實驗與視覺化工具，讓學習者能更直觀地探索物理世界的奧秘。"
   },
   "footer": {
     "rights": "版權所有。"
