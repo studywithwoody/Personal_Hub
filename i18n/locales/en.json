@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm",
+    "role": "Developer, Educator & Tech Enthusiast",
+    "description": "Welcome to my digital hub. Here you'll find links to my latest projects, technical tutorials, and learning resources. I build things for the web and love sharing what I learn.",
+    "contact": "Contact Me"
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Tech Blog",
+    "explore": "Explore"
+  },
+  "showcase": {
+    "title": "My Universe",
+    "tech_blog": "Tech Blog",
+    "tech_blog_desc": "Deep dives into web development, Nuxt, and modern frontend architecture.",
+    "teaching": "Teaching Platform",
+    "teaching_desc": "Premium courses and video tutorials on Full Stack development.",
+    "portfolio": "Portfolio V1",
+    "portfolio_desc": "Archive of my previous work and early experiments in design.",
+    "snippets": "Code Snippets",
+    "snippets_desc": "A collection of useful helper functions and reusable components.",
+    "photos": "Photography",
+    "photos_desc": "Visual stories captured through my lens during my travels."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

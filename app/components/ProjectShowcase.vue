@@ -5,7 +5,7 @@
         class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2"
       >
         <UIcon name="i-heroicons-rectangle-stack" class="text-primary-500" />
-        My Universe
+        {{ $t("showcase.title") }}
       </h2>
     </div>
 
@@ -62,39 +62,38 @@
 </template>
 
 <script setup lang="ts">
-const links = [
+const { t } = useI18n();
+
+const links = computed(() => [
   {
-    title: "Tech Blog",
-    description:
-      "Deep dives into web development, Nuxt, and modern frontend architecture.",
+    title: t("showcase.tech_blog"),
+    description: t("showcase.tech_blog_desc"),
     url: "https://blog.example.com",
     icon: "i-heroicons-book-open",
   },
   {
-    title: "Teaching Platform",
-    description:
-      "Premium courses and video tutorials on Full Stack development.",
+    title: t("showcase.teaching"),
+    description: t("showcase.teaching_desc"),
     url: "https://courses.example.com",
     icon: "i-heroicons-academic-cap",
   },
   {
-    title: "Portfolio V1",
-    description: "Archive of my previous work and early experiments in design.",
+    title: t("showcase.portfolio"),
+    description: t("showcase.portfolio_desc"),
     url: "https://v1.example.com",
     icon: "i-heroicons-archive-box",
   },
   {
-    title: "Code Snippets",
-    description:
-      "A collection of useful helper functions and reusable components.",
+    title: t("showcase.snippets"),
+    description: t("showcase.snippets_desc"),
     url: "https://snippets.example.com",
     icon: "i-heroicons-code-bracket",
   },
   {
-    title: "Photography",
-    description: "Visual stories captured through my lens during my travels.",
+    title: t("showcase.photos"),
+    description: t("showcase.photos_desc"),
     url: "https://photos.example.com",
     icon: "i-heroicons-camera",
   },
-];
+]);
 </script>

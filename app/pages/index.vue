@@ -1,15 +1,13 @@
 <template>
-  <div
-    class="min-h-screen bg-gray-50 dark:bg-gray-950 font-sans selection:bg-primary-500/30"
-  >
+  <div>
     <UContainer>
       <main class="space-y-12 pb-24">
-        <Hero />
+        <AppHero />
         <USeparator
           label="Explore"
           :ui="{ label: 'text-primary-500 font-medium' }"
         />
-        <Showcase />
+        <ProjectShowcase />
       </main>
 
       <footer

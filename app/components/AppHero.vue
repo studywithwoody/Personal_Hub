@@ -22,35 +22,33 @@
         <h1
           class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-white"
         >
-          Hello, I'm <span class="text-primary-500">Johan</span>
+          {{ $t("hero.greeting") }} <span class="text-primary-500">Johan</span>
         </h1>
         <p
           class="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-light"
         >
-          Developer, Educator & Tech Enthusiast
+          {{ $t("hero.role") }}
         </p>
       </div>
 
       <p
         class="text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0"
       >
-        Welcome to my digital hub. Here you'll find links to my latest projects,
-        technical tutorials, and learning resources. I build things for the web
-        and love sharing what I learn.
+        {{ $t("hero.description") }}
       </p>
 
       <!-- Social / Contact Links -->
       <div class="flex flex-wrap justify-center md:justify-start gap-4">
         <UButton
           icon="i-heroicons-envelope"
-          color="gray"
+          color="neutral"
           variant="ghost"
-          label="Contact Me"
+          :label="$t('hero.contact')"
           size="lg"
         />
         <UButton
           icon="i-simple-icons-github"
-          color="gray"
+          color="neutral"
           variant="ghost"
           to="https://github.com"
           target="_blank"
@@ -58,7 +56,7 @@
         />
         <UButton
           icon="i-simple-icons-linkedin"
-          color="gray"
+          color="neutral"
           variant="ghost"
           to="https://linkedin.com"
           target="_blank"
@@ -66,7 +64,7 @@
         />
         <UButton
           icon="i-simple-icons-twitter"
-          color="gray"
+          color="neutral"
           variant="ghost"
           to="https://twitter.com"
           target="_blank"

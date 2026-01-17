@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "greeting": "你好，我是",
+    "role": "開發者、教育家 & 技術愛好者",
+    "description": "歡迎來到我的數位中心。在這裡，你可以找到我最新的專案、技術教程和學習資源。我熱愛建立 Web 應用並分享我所學到的知識。",
+    "contact": "聯絡我"
+  },
+  "nav": {
+    "home": "首頁",
+    "blog": "技術部落格",
+    "explore": "探索"
+  },
+  "showcase": {
+    "title": "我的宇宙",
+    "tech_blog": "技術部落格",
+    "tech_blog_desc": "深入探討 Web 開發、Nuxt 和現代前端架構。",
+    "teaching": "教學平台",
+    "teaching_desc": "關於全端開發的優質課程和影片教學。",
+    "portfolio": "作品集 V1",
+    "portfolio_desc": "我之前的作品存檔以及早期的設計實驗。",
+    "snippets": "程式碼片段",
+    "snippets_desc": "收集有用的輔助函式和可重複使用的元件。",
+    "photos": "攝影作品",
+    "photos_desc": "透過我的鏡頭捕捉旅行中的視覺故事。"
+  },
+  "footer": {
+    "rights": "版權所有。"
+  }
+}
