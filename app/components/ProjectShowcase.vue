@@ -99,13 +99,13 @@ const links = computed(() => [
     title: t("showcase.Physim"),
     description: t("showcase.Physim_desc"),
     url: "https://physimhub.studywithwoody.site",
-    icon: "i-heroicons:presentation-chart-line",
+    icon: "i-heroicons:academic-cap",
   },
   {
     title: t("showcase.tutoring"),
     description: t("showcase.tutoring_desc"),
     url: "https://tutoring.ad.studywithwoody.site",
-    icon: "i-heroicons:presentation-chart-line",
+    icon: "i-heroicons:academic-cap",
   },
 ]);
 </script>

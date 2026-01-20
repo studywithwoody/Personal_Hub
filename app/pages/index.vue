@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: "Johan | Personal Hub",
+  title: "Woody | Personal Hub",
   meta: [
     {
       name: "description",
