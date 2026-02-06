@@ -11,19 +11,16 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <NuxtLink
-        v-for="item in links"
+        v-for="item in projects"
+        :id="`project-${item.slug}`"
         :key="item.title"
-        :to="item.url"
+        :to="`/projects#project-${item.slug}`"
         target="_blank"
-        class="group relative"
+        class="group relative scroll-mt-24"
       >
         <UCard
-          :ui="{
-            body: { padding: 'p-0' },
-            ring: 'ring-1 ring-gray-200 dark:ring-gray-800 group-hover:ring-primary-500/50 dark:group-hover:ring-primary-400/50 transition-all duration-300',
-            shadow: 'shadow-sm group-hover:shadow-md',
-          }"
-          class="h-full transition-all duration-300 overflow-hidden"
+          :ui="{ body: 'p-0' }"
+          class="h-full transition-all duration-300 overflow-hidden ring-1 ring-gray-200 dark:ring-gray-800 group-hover:ring-primary-500/50 dark:group-hover:ring-primary-400/50 shadow-sm group-hover:shadow-md"
         >
           <div class="p-6 space-y-4">
             <div class="flex items-start justify-between">
@@ -54,7 +51,7 @@
 
           <div
             class="h-1 w-full bg-gradient-to-r from-transparent via-primary-500/50 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500"
-          ></div>
+          />
         </UCard>
       </NuxtLink>
     </div>
@@ -62,50 +59,5 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
-
-const links = computed(() => [
-  {
-    title: t("showcase.tech_blog"),
-    description: t("showcase.tech_blog_desc"),
-    url: "https://techblog.studywithwoody.site",
-    icon: "i-heroicons-book-open",
-  },
-  {
-    title: t("showcase.teaching"),
-    description: t("showcase.teaching_desc"),
-    url: "https://tutorai.studywithwoody.site",
-    icon: "i-heroicons-academic-cap",
-  },
-  {
-    title: t("showcase.cosmology"),
-    description: t("showcase.cosmology_desc"),
-    url: "https://cosmology.studywithwoody.site",
-    icon: "i-heroicons:sparkles-solid",
-  },
-  {
-    title: t("showcase.architecture"),
-    description: t("showcase.architecture_desc"),
-    url: "https://architecture.studywithwoody.site",
-    icon: "i-heroicons:building-office",
-  },
-  {
-    title: t("showcase.investment"),
-    description: t("showcase.investment_desc"),
-    url: "https://investment.studywithwoody.site",
-    icon: "i-heroicons:presentation-chart-line",
-  },
-  {
-    title: t("showcase.Physim"),
-    description: t("showcase.Physim_desc"),
-    url: "https://physimhub.studywithwoody.site",
-    icon: "i-heroicons:academic-cap",
-  },
-  {
-    title: t("showcase.tutoring"),
-    description: t("showcase.tutoring_desc"),
-    url: "https://tutoring.ad.studywithwoody.site",
-    icon: "i-heroicons:academic-cap",
-  },
-]);
+const { projects } = useProjects();
 </script>

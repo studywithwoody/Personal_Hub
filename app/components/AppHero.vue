@@ -5,14 +5,14 @@
     <!-- Avatar / Image Section -->
     <div class="relative group">
       <div
-        class="absolute -inset-1 bg-gradient-to-r from-primary-400 to-violet-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"
-      ></div>
+        class="absolute -inset-1 bg-linear-to-r from-primary-400 to-violet-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"
+      />
       <UAvatar
         src="https://github.com/woody1234567/woody1234567/blob/main/images/selfie.png?raw=true"
         alt="User Avatar"
         size="3xl"
         class="relative ring-4 ring-gray-100 dark:ring-gray-800 w-48 h-48 md:w-64 md:h-64"
-        :ui="{ rounded: 'rounded-full' }"
+        :ui="{ root: 'rounded-full' }"
       />
     </div>
 
@@ -72,5 +72,31 @@
         />
       </div>
     </div>
+
+    <!-- Projects Quick Links Section -->
+    <div class="w-full md:w-64 space-y-4">
+      <h3
+        class="text-sm font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider text-center md:text-left"
+      >
+        {{ $t("nav.projects") }}
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-1 gap-2">
+        <UButton
+          v-for="project in projects"
+          :key="project.slug"
+          :to="`/projects#project-${project.slug}`"
+          :icon="project.icon"
+          color="neutral"
+          variant="subtle"
+          :label="project.title"
+          class="justify-start hover:translate-x-1 transition-transform"
+          size="sm"
+        />
+      </div>
+    </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { projects } = useProjects();
+</script>
