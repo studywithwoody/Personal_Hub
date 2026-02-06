@@ -78,7 +78,19 @@
             <UIcon name="i-heroicons-briefcase" class="text-primary-500" />
             {{ $t("cv.experience") }}
           </h2>
-          <UTimeline :items="experienceItems" />
+          <UTimeline :items="experienceItems">
+            <template #description="{ item }">
+              <ul
+                v-if="Array.isArray(item.description)"
+                class="list-disc list-inside space-y-1"
+              >
+                <li v-for="(line, index) in item.description" :key="index">
+                  {{ rt(line) }}
+                </li>
+              </ul>
+              <span v-else>{{ item.description }}</span>
+            </template>
+          </UTimeline>
         </section>
 
         <section>
@@ -86,7 +98,19 @@
             <UIcon name="i-heroicons-academic-cap" class="text-primary-500" />
             {{ $t("cv.education") }}
           </h2>
-          <UTimeline :items="educationItems" />
+          <UTimeline :items="educationItems">
+            <template #description="{ item }">
+              <ul
+                v-if="Array.isArray(item.description)"
+                class="list-disc list-inside space-y-1"
+              >
+                <li v-for="(line, index) in item.description" :key="index">
+                  {{ rt(line) }}
+                </li>
+              </ul>
+              <span v-else>{{ item.description }}</span>
+            </template>
+          </UTimeline>
         </section>
       </div>
 
@@ -201,23 +225,26 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
+const { t, tm, rt } = useI18n();
 
 const experienceItems = computed(() => [
   {
     date: "2022.2 ~ 2022.5",
     title: t("cv.exp_items.funnow.title"),
-    description: t("cv.exp_items.funnow.desc"),
+    description: tm("cv.exp_items.funnow.desc") as any,
+    icon: "heroicons:chart-bar-square",
   },
   {
     date: "2021.9 ~ 2022.6",
     title: t("cv.exp_items.ntudac.title"),
-    description: t("cv.exp_items.ntudac.desc"),
+    description: tm("cv.exp_items.ntudac.desc") as any,
+    icon: "heroicons:user-16-solid",
   },
   {
     date: "2021.6 - 2021.8",
     title: t("cv.exp_items.sinica.title"),
-    description: t("cv.exp_items.sinica.desc"),
+    description: tm("cv.exp_items.sinica.desc") as any,
+    icon: "heroicons:rocket-launch",
   },
 ]);
 
@@ -225,17 +252,20 @@ const educationItems = computed(() => [
   {
     date: "2024.9 - 2025.3",
     title: t("cv.edu_items.hamburg.title"),
-    description: t("cv.edu_items.hamburg.desc"),
+    description: tm("cv.edu_items.hamburg.desc") as any,
+    icon: "i-heroicons-academic-cap",
   },
   {
     date: "2022.9 ~ 2025.7",
     title: t("cv.edu_items.ntu_ms.title"),
-    description: t("cv.edu_items.ntu_ms.desc"),
+    description: tm("cv.edu_items.ntu_ms.desc") as any,
+    icon: "i-heroicons-academic-cap",
   },
   {
     date: "2017.9 - 2022.6",
     title: t("cv.edu_items.ntu_bs.title"),
-    description: t("cv.edu_items.ntu_bs.desc"),
+    description: tm("cv.edu_items.ntu_bs.desc") as any,
+    icon: "i-heroicons-academic-cap",
   },
 ]);
 
