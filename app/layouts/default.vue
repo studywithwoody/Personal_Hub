@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-gray-50 dark:bg-gray-950 font-sans text-gray-900 dark:text-gray-100 selection:bg-primary-500/30"
+    class="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-950 font-sans text-gray-900 dark:text-gray-100 selection:bg-primary-500/30"
   >
     <header
       class="sticky top-4 z-50 mx-4 mb-8 rounded-2xl backdrop-blur-xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-sm"
@@ -9,7 +9,7 @@
         <div class="flex items-center gap-4">
           <NuxtLink to="/" class="flex items-center gap-2 group">
             <UAvatar
-              src="https://api.dicebear.com/7.x/notionists/svg?seed=Felix"
+              src="https://github.com/woody1234567/woody1234567/blob/main/images/pyramid_avatar.png?raw=true"
               alt="Avatar"
               size="xs"
               class="ring-2 ring-primary-500/20 group-hover:ring-primary-500 transition-all duration-300"
@@ -74,6 +74,8 @@
     </header>
 
     <slot />
+
+    <AppFooter />
   </div>
 </template>
 

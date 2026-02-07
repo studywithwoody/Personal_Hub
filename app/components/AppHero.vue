@@ -8,7 +8,7 @@
         class="absolute -inset-1 bg-linear-to-r from-primary-400 to-violet-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"
       />
       <UAvatar
-        src="https://github.com/woody1234567/woody1234567/blob/main/images/selfie.png?raw=true"
+        src="https://github.com/woody1234567/woody1234567/blob/main/images/pyramid.png?raw=true"
         alt="User Avatar"
         size="3xl"
         class="relative ring-4 ring-gray-100 dark:ring-gray-800 w-48 h-48 md:w-64 md:h-64"

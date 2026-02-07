@@ -3,7 +3,7 @@
     <!-- Header Section -->
     <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
       <UAvatar
-        src="https://api.dicebear.com/7.x/notionists/svg?seed=Felix"
+        src="https://github.com/woody1234567/woody1234567/blob/main/images/pyramid_avatar.png?raw=true"
         alt="Chun-Wei, Hsu"
         size="3xl"
         class="ring-4 ring-primary-500/20 shadow-xl"
